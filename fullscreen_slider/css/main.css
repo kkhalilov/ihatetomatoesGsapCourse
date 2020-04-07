@@ -1,0 +1,387 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #2e2e30;
+    color: #fff;
+}
+
+.slidesContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.slideContent {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.slideContent h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    line-height: 1em;
+}
+
+.slideContent {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+/* =Projects Slide= */
+
+.loading .slide {
+    visibility: none;
+    opacity: 0;
+}
+/* .btn-gradient {
+    width: fit-content;
+    min-width: 200px;
+    margin: 2rem;
+    height: auto;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-image: linear-gradient(#2e2e30, #2e2e30), radial-gradient(circle at top left, rgba(131,58,180,1) , rgba(252,176,69,1));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: color .3s ease-out;
+    cursor: pointer;
+    -webkit-transition: color .3s ease-out;
+    -moz-transition: color .3s ease-out;
+    -ms-transition: color .3s ease-out;
+    -o-transition: color .3s ease-out;
+}
+.btn-gradient span {
+    display: block;
+    padding: 0.5rem 1rem;
+} */
+.slide {
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s linear, visibility 0.3s linear;
+    -webkit-transition: opacity 0.3s linear, visibility 0.3s linear;
+    -moz-transition: opacity 0.3s linear, visibility 0.3s linear;
+    -ms-transition: opacity 0.3s linear, visibility 0.3s linear;
+    -o-transition: opacity 0.3s linear, visibility 0.3s linear;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    visibility: visible;
+    opacity: 1;
+}
+
+.bcg {
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 1;
+}
+.slide02-active .nav li a {
+    color: #fff;
+}
+.slide02-active .nav li.active a {
+    color: #222;
+}
+.slide01 .bcg {
+    background-image: url(../img/img_slide01.jpg);
+}
+
+.slide02 .bcg {
+    background-image: url(../img/img_slide02.jpg);
+}
+
+.slide03 .bcg {
+    background-image: url(../img/img_slide03.jpg);
+}
+
+.slide04 .bcg {
+    background-image: url(../img/img_slide04.jpg);
+}
+
+.slide04 .slideContent {
+    color: #222;
+}
+
+.slide04 .slideContent p {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* =Navigation= */
+
+.nav {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    left: 40px;
+    list-style-type: none;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    float: left;
+    list-style: none;
+    width: 25%;
+    text-align: center;
+}
+.test-box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+.test-morph {
+    width: 30%;
+    height: 30%;
+    background-color: #eee;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow:
+        -12px -12px 12px rgba(255, 255, 255, 0.7),
+        6px 6px 6px rgba(0, 0, 0, 0.1);
+
+}
+.nav li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #222;
+    display: block;
+    padding: 8px 16px;
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-width: 1px 0 1px 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+.nav li:last-child a {
+    border-width: 1px;
+}
+
+.nav li.active a {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+    .slideContent h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+    .slideContent {
+        font-size: 24px;
+    }
+    .nav li a {
+        font-size: 24px;
+    }
+}
+
+@media print,
+    (-o-min-device-pixel-ratio: 5/4),
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 120dpi) {
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
